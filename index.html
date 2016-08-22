@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Bootstrap: Grid System</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+
+    <!-- HTML5 Shim and Respond.js Agrega soporte para elementos HTML5 y media quieries en IE8 -->
+    <!-- ADVERTENCIA: Respond.js no soporta que ejecutes tu código via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->	
+</head>
+<body>
+  <div class="container">  <!-- Para todo el documento -->
+    <header>
+      <div class="row">   <!-- Inicia div del row header encabezado -->
+        <div class="col-xs-6 col-md-8 col-lg-5">    <!-- Inicia Div Logo Site name -->    
+          <h1>Site name</h1>
+        </div>    <!-- Termina Div Logo Site name -->
+        <div class="col-xs-3 col-md-2 col-lg-2 mt-1">    <!-- Inicia Link noticias -->    
+          <h5 class="ml-5"><span class="glyphicon glyphicon-home"></span> <a href="#">Noticias</a></h5>
+        </div>    <!-- Termina Link noticias -->
+        <div class="col-xs-3 col-md-2 col-lg-2 mt-3">    <!-- Inicia Link enlaces RSS -->    
+          <h5"><span class="glyphicon glyphicon-home"></span> <a href="#">Enlaces RSS</a>&nbsp |</h5>
+        </div>    <!-- Termina Link enlaces RSS -->
+        <div class="col-lg-3 visible-lg">    <!-- Inicia Buscador -->    
+          <form class="mt-2" method=GET action="http://www.google.com/search">
+            <a href=" http://www.google.com/"></a>  <!-- Usará el buscador de google -->
+              <input type="text" name=q placeholder="Ingresa tu búsqueda"  maxlength=255 value="">  <!-- Caja de texto del buscador -->
+              <button class="buscar" type=submit name=btnG>Buscar</button>  <!-- Boton buscar -->
+          </form>
+        </div>    <!-- Termina Buscador -->
+      </div>  <!-- Termina div del row header encabezado -->
+      <div class="row">   <!-- Comienza header menú -->
+        <div class="col-xs-12 col-md-12 col-lg-12">
+          <nav class="navbar-inverse nav-bar-static-top" role="navigation">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navegacion">
+                <span class="sr-only">Desplegar / Ocultar menu</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navegacion">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Bienvenido</a></li>
+                <li><a href="#">Actualidades</a></li>
+                <li><a href="#">En directo</a></li>
+                <li><a href="#">Reporte financiero</a></li>
+                <li><a href="#">Nuestra oferta</a></li>
+                <li><a href="#">De nosotros a ustedes</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>    <!-- Termina header menú -->
+    </header>   <!-- Termina header -->
+    <section>
+      <div class="row">
+        <article>
+          <div class="col-lg-5">   <!-- Columna izquierda -->
+            <div class="row">   <!-- Empieza primer renglon -->
+              <div class="col-lg-12">
+                <h4 class="mt-5"><mark class="pd-2">Historia destacada</mark></h4>  <!-- Texto subrayado -->
+                <p class="mt-5"><strong>Arículo</strong> | <span>publicado el 09/10/15<span></p>
+                <p class="lead">Lorem ipsum dolor sit amet</p> 
+                <h6 class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, optio, modi! Incidunt repellat sunt, odit accusantium impedit. Voluptates harum minus, libero magni. Neque, harum. Officia alias doloribus, corporis. Consequuntur, quibusdam.</h6> 
+                <ul class="nav nav-pills">
+                  <li>
+                      <a href="#">Ver más...</a></li>   <!-- Ver más -->
+                    <li>
+                      <a href="#">Etiquetas:</a>
+                    </li>   <!-- Etiquetas -->
+                  <li>
+                    <small><u><a href="#">lorem</a></u></small>  <!-- Texto subrayado -->
+                    <small><u><a href="#">ipsum</a></u></small>  <!-- Texto subrayado -->
+                    <small><u><a href="#">lorem</a></u></small>  <!-- Texto subrayado -->
+                  </li>  
+                </ul>
+              </div>
+              <hr>
+            </div>    <!-- Termina primer renglon -->
+            <div class="row">   <!-- Empieza segundo renglon -->
+              <div class="col-lg-12">
+                <ul class="nav nav-pills">
+                    <li>
+                      <span>
+                        <mark>Webzone</mark>
+                      </span>
+                    </li>
+                    <li><span><a class="pull-left" href="#"><u>Preguntas</u></a> | publicado el 09/10/15</span>  <!-- Link preguntas subrayado --></li>
+                  </ul> 
+                <p class="lead">Eitam Lorem ipsum dolor sit amet</p> 
+                <h6 class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, optio, modi! Incidunt repellat sunt, odit accusantium impedit. Voluptates harum minus, libero magni. Neque, harum. Officia alias doloribus, corporis. Consequuntur, quibusdam.</h6> 
+                <ul class="nav nav-pills">
+                  <li>
+                      <a href="#">Ver más...</a></li>   <!-- Ver más -->
+                    <li>
+                      <a href="#">Etiquetas:</a>
+                    </li>   <!-- Etiquetas -->
+                  <li>
+                    <small><u><a href="#">lorem</a></u></small>  <!-- Texto subrayado -->
+                    <small><u><a href="#">ipsum</a></u></small>  <!-- Texto subrayado -->
+                    <small><u><a href="#">lorem</a></u></small>  <!-- Texto subrayado -->
+                  </li>  
+                </ul>
+              </div>
+              <hr>
+            </div>    <!-- Termina segundo renglon -->
+            <div class="row">   <!-- Empieza tercer renglon -->
+              <div class="col-lg-12">
+                <p class="mt-5"><strong>Arículo</strong> | <span>publicado el 09/10/15<span></p> 
+                <p class="lead">Lorem ipsum dolor sit amet</p> 
+                <img src="http://www.hrhwalls.com/reimg/image.php?src=http://img.hrhwalls.com/images178/fvzzzaejzg4.jpg&h=450&w=728" alt="image">
+                <h6 class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, optio, modi! Incidunt repellat sunt, odit accusantium impedit. Voluptates harum minus, libero magni. Neque, harum. Officia alias doloribus, corporis. Consequuntur, quibusdam.</h6> 
+                <ul class="nav nav-pills">
+                  <li>
+                      <a href="#">Ver más...</a></li>   <!-- Ver más -->
+                    <li>
+                      <a href="#">Etiquetas:</a>
+                    </li>   <!-- Etiquetas -->
+                  <li>
+                    <small><u><a href="#">lorem</a></u></small>  <!-- Texto subrayado -->
+                    <small><u><a href="#">ipsum</a></u></small>  <!-- Texto subrayado -->
+                    <small><u><a href="#">lorem</a></u></small>  <!-- Texto subrayado -->
+                  </li>  
+                </ul>
+              </div>
+              <hr>
+            </div>    <!-- Termina tercer renglon -->
+            <div class="row">   <!-- Empieza cuarto renglon -->
+              <div class="col-lg-12">
+                <p class="lead">Lorem ipsum dolor sit amet</p> 
+                <h6 class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, optio, modi! Incidunt repellat sunt, odit accusantium impedit. Voluptates harum minus, libero magni. Neque, harum. Officia alias doloribus, corporis. Consequuntur, quibusdam.</h6> 
+                <ul class="nav nav-pills">
+                  <li>
+                      <a href="#">Ver más...</a></li>   <!-- Ver más -->
+                    <li>
+                      <a href="#">Etiquetas:</a>
+                    </li>   <!-- Etiquetas -->
+                  <li>
+                    <small><u><a href="#">lorem</a></u></small>  <!-- Texto subrayado -->
+                    <small><u><a href="#">ipsum</a></u></small>  <!-- Texto subrayado -->
+                    <small><u><a href="#">lorem</a></u></small>  <!-- Texto subrayado -->
+                  </li>  
+                </ul>
+              </div>
+              <hr>
+            </div>    <!-- Termina cuarto renglon -->
+          </div>    <!-- Termina Columna izquierda -->
+        </article>
+        <section>
+          <div class="col-lg-4">   <!-- Columna central -->
+            <div class="row">
+              <div class="cont-video mt-5">
+                <div class="col lg-12">
+                  <h4 id="hd"><mark>Historia destacada</mark></h4>  <!-- Texto subrayado -->
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/HrwbXXszBng" frameborder="0" allowfullscreen></iframe>
+                  <p class="plr-2 lead">Claire Dupond</p>
+                  <h6 class="plr-2 text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, optio, modi! Incidunt repellat sunt, odit accusantium impedit. Voluptates harum minus, libero magni. Neque, harum. Officia alias doloribus, corporis. Consequuntur, quibusdam.</h6> 
+                  <!-- <p class="mt-5"><span><small>publicado el 09/10/15</small><span></p> -->
+                  <ul class="nav nav-pills">
+                    <li class="plr-2">
+                      <p><small>publicado el 09/10/15</small></p>
+                    </li>
+                    <li class="plr-2">
+                      <a href="#"><small>Ver más...</small></a>
+                    </li>   
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="mt-3 col-lg-12 agenda">
+                <h4 class=""><mark>Agenda</mark></h4>  <!-- Agenda Texto subrayado -->
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-3">    <!-- Cuadro fecha -->
+                <p class="mt-5 cont-video lead text-center"> 23 Enero</p>
+              </div>
+              <div class="col-lg-9">    <!-- subtitulo y parrafo -->
+                <p class="text-justify"><small><strong>Lorem ipsum</strong><br>Lorem ipsum dolor sit amet, consectetur.<br>Del 23 al 28 de diciembre 2015.</small></p>    <!-- Párrafo --> 
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-3">    <!-- Cuadro fecha -->
+                <p class="mt-5 cont-video lead text-center"> 23 Enero</p>
+              </div>
+              <div class="col-lg-9">    <!-- subtitulo y parrafo -->
+                <p class="text-justify"><small><strong>Lorem ipsum</strong><br>Lorem ipsum dolor sit amet, consectetur.<br>Del 23 al 28 de diciembre 2015.</small></p>    <!-- Párrafo --> 
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-3">    <!-- Cuadro fecha -->
+                <p class="mt-5 cont-video lead text-center"> 23 Enero</p>
+              </div>
+              <div class="col-lg-9">    <!-- subtitulo y parrafo -->
+                <p class="text-justify"><small><strong>Lorem ipsum</strong><br>Lorem ipsum dolor sit amet, consectetur.<br>Del 23 al 28 de diciembre 2015.</small></p>    <!-- Párrafo --> 
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-3">    <!-- Cuadro fecha -->
+                <p class="mt-5 cont-video lead text-center"> 23 Enero</p>
+              </div>
+              <div class="col-lg-9">    <!-- subtitulo y parrafo -->
+                <p class="text-justify"><small><strong>Lorem ipsum</strong><br>Lorem ipsum dolor sit amet, consectetur.<br>Del 23 al 28 de diciembre 2015.</small></p>    <!-- Párrafo --> 
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-lg-12">
+                <p class="lead"><strong>Más información</strong></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <p><small><u>Localidades</u></small><span id="negritas"><br>Lorem Ipsum</span><br>Lorem ipsum dolor sit amet, consectetur adipisicing<br> elit. Lorem ipsum dolor sit amet</p>
+              </div>
+            </div>
+          </div>     <!-- Termina Columna central -->
+        </section>
+        <aside>
+          <div class="col-lg-4">   <!-- Columna derecha aside -->
+          </div>     <!-- Termina Columna derecha aside-->
+        </aside>
+      </div>
+    </section>
+  </div>  <!-- Div del container-fluid que cierra al final --> 
+  <!-- Incluir todos tus scripts apartir de este punto -->
+    <!-- jQuery (necesario para que funcionen los componentes de Bootstrap) -->
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
