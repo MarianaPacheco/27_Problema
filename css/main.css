@@ -62,6 +62,10 @@ nav{
 .cont-video{
 	width: 100%;
 	background-color:#D0D3D4 ;
+	height: 380px;
+}
+.bg-gray{
+	background-color:#D0D3D4 ;
 }
 
 #hd{
@@ -84,4 +88,12 @@ hr{
 #negritas{
 	font-weight: bold;
 	font-size: 1em;
+}
+.mr{
+	margin-left: -20%;
+	padding-right: 10%;
+}
+.borde{
+	margin-left: 1%;
+	margin-right: .5%;
 }
